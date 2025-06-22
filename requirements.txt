@@ -1,0 +1,8 @@
+flask
+whisper
+gtts
+pydub
+moviepy
+opencv-python
+ffmpeg-python
+pillow

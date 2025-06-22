@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reels Generator</title>
+</head>
+<body>
+  <h1>🎬 Hinglish Reels Generator</h1>
+  <form method="post" enctype="multipart/form-data">
+    <label>Enter summary text:</label><br>
+    <textarea name="summary" rows="5" cols="50" required></textarea><br><br>
+
+    <label>Upload background image(s):</label><br>
+    <input type="file" name="images" accept="image/*" multiple required><br><br>
+
+    <button type="submit">✨ Generate Video</button>
+  </form>
+
+  {% if video_url %}
+    <h2>✅ Download Final Video:</h2>
+    <a href="{{ video_url }}" download>Click here to download</a><br><br>
+    <video width="360" controls autoplay>
+      <source src="{{ video_url }}" type="video/mp4">
+    </video>
+  {% endif %}
+</body>
+</html>
