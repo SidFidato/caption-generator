@@ -1,8 +1,10 @@
-flask
-whisper
+Flask
+moviepy
 gtts
 pydub
-moviepy
-opencv-python
 ffmpeg-python
-pillow
+whisper
+torch
+opencv-python
+Pillow
+numpy
