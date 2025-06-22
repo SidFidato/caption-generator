@@ -1,9 +1,10 @@
+--upgrade pip setuptools wheel
 Flask
 moviepy==1.0.3
 gtts
 pydub
 ffmpeg-python
-openai-whisper
+git+https://github.com/openai/whisper.git@v20230314
 torch
 opencv-python
 Pillow
