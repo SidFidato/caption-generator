@@ -11,4 +11,4 @@ RUN apt-get update && apt-get install -y -qq git ffmpeg libsm6 libxext6 && \
 
 EXPOSE 5000
 
-CMD ["python", "app.py"]
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:10000"]
