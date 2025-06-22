@@ -3,7 +3,7 @@ moviepy==1.0.3
 gtts
 pydub
 ffmpeg-python
-whisper
+openai-whisper
 torch
 opencv-python
 Pillow
