@@ -9,6 +9,6 @@ RUN apt-get update && apt-get install -y -qq git ffmpeg libsm6 libxext6 && \
     pip install --upgrade pip setuptools wheel && \
     pip install -r requirements.txt
 
-EXPOSE 5000
+EXPOSE 10000
 
 CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:10000"]
